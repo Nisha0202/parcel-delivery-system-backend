@@ -24,3 +24,6 @@ export const authenticate = async (req: AuthRequest, res: Response, next: NextFu
     return res.status(401).json({ success: false, message: 'Invalid token' });
   }
 };
+
+
+
