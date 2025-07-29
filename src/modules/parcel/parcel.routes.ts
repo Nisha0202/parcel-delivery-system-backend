@@ -13,7 +13,7 @@ const router = Router();
 // Sender
 router.post('/', authenticate, authorizeRole('sender'), createParcel);
 router.get('/me', authenticate, authorizeRole('sender'), listMyParcels);
-router.patch('/cancel/:id', authenticate, authorizeRole('sender'), cancelParcel);
+router.patch('/:id/cancel', authenticate, authorizeRole('sender'), cancelParcel);
 
 // Receiver
 router.get('/received', authenticate, authorizeRole('receiver'), incomingParcels);

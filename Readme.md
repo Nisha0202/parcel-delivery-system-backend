@@ -117,9 +117,10 @@ src/
 
 - Only sender can cancel parcel (before `Dispatched`).
 - Only receiver can confirm delivery (when status is `In Transit`).
+- Only receiver can view their incoming parcels.
 - Blocked users/parcels cannot access features.
 - Admin can block/unblock users/parcels, update statuses.
-- Only owner can view their parcels.
+- Only sender can view their parcels.
 - Unique tracking ID for each parcel.
 
 ---
@@ -145,7 +146,7 @@ src/
 
 ## 🧪 Testing
 
-- Use included Postman collection.
+- Used included Postman collection.
 - Register, login, create parcels, cancel, confirm, block/unblock.
 
 ---
@@ -172,12 +173,12 @@ src/
 
 ## 📊 Evaluation Rubric Mapping
 
-- **Authentication:** JWT + bcrypt (Ready)
-- **Role-Based Auth:** Custom middlewares (Ready)
-- **Sender/Receiver Logic:** Ownership, validation (Ready)
-- **Parcel & Status Design:** Schema, status log (Ready)
-- **Status History/Filter:** Embedded, filterable (Ready)
-- **Code Structure/Error Handling:** Modular, error middleware (Ready)
-- **Creativity/Design:** Thoughtful schema, tracking, blocking (Ready)
-- **README/API Testing/Video:** Provided (Ready)
+- **Authentication:** JWT + bcrypt 
+- **Role-Based Auth:** Custom middlewares 
+- **Sender/Receiver Logic:** Ownership, validation 
+- **Parcel & Status Design:** Schema, status log 
+- **Status History/Filter:** Embedded, filterable 
+- **Code Structure/Error Handling:** Modular, error middleware 
+- **Creativity/Design:** Thoughtful schema, tracking, blocking 
+- **README/API Testing/Video:** Provided 
 
