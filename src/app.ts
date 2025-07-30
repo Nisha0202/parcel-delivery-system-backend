@@ -30,12 +30,3 @@ connectDB().then(() => {
   });
 });
 
-
-// connectDB()
-//   .then(() => {
-//     console.log('MongoDB connected successfully');
-//   })
-//   .catch((err) => {
-//     console.error('MongoDB connection failed:', err);
-//   });
-
