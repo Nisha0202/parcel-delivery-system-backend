@@ -151,6 +151,22 @@ src/
 
 ---
 
+## 👩🏻‍💻 Test Accounts
+
+- **Admin**  
+  Email: admin@example.com  
+  Password: 123456
+
+- **Sender**  
+  Email: sender@example.com  
+  Password: 123456
+
+- **Receiver**  
+  Email: receiver@example.com  
+  Password: SecurePass123
+
+---
+
 ## 🎥 Demo Video
 
 - See `demo.mp4` for full walkthrough.
