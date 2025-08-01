@@ -4,9 +4,12 @@ import User from '../user/user.model';
 import { generateTrackingId } from '../../utils/generateTrackingId';
 
 // Helper: Fee calculation (flat rate)
-function calculateFee(weight: number) {
-  return Math.max(50, weight * 20); 
+const calculateFee = (weight:number) => {
+  const w = Number(weight);
+  if (isNaN(w) || w <= 0) return 0;
+  return w * 80;
 }
+
 
 // Sender: Create Parcel
 export const createParcel = async (req: any, res: Response) => {

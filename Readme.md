@@ -95,7 +95,7 @@ src/
 - **pickupAddress:** string
 - **deliveryAddress:** string
 - **fee:** number
-- **couponCode:** number
+- **couponCode:** string
 - **deliveryDate:** Date
 - **status:** string (`Requested`, `Approved`, `Dispatched`, `In Transit`, `Delivered`, `Canceled`, `Blocked`)
 - **isBlocked:** boolean
@@ -124,7 +124,7 @@ src/
 - Admin can block/unblock users/parcels, update statuses.
 - Only sender can view their parcels.
 - Unique tracking ID for tracking each parcel.
-- Fee calculation according flat rate.
+- Fee calculation according 80tk/weight.
 - Fee discounted by 50tk if "Save50" coupon code used.
 
 ---
