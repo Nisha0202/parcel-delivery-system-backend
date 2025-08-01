@@ -3,7 +3,7 @@ import {
   createParcel, listMyParcels, cancelParcel,
   incomingParcels, confirmDelivery,
   listAllParcels, blockParcel, updateParcelStatus,
-  getParcelById, getParcelStatusLog
+  getParcelById, getParcelStatusLog, getParcelByTrackingId
 } from './parcel.controller';
 import { authenticate } from '../../middlewares/auth.middleware';
 import { authorizeRole } from '../../middlewares/role.middleware';
@@ -27,5 +27,7 @@ router.patch('/:id/status', authenticate, authorizeRole('admin'), updateParcelSt
 // Shared
 router.get('/:id', authenticate, getParcelById);
 router.get('/:id/status-log', authenticate, getParcelStatusLog);
+router.get('/track/:trackingId', getParcelByTrackingId);
+
 
 export default router;

@@ -81,6 +81,7 @@ src/
 #### Shared
 - `GET /api/parcels/:id` – View parcel details (sender, receiver, admin)
 - `GET /api/parcels/:id/status-log` – Parcel status history
+- `GET /api/track/YOUR_TRACKING_ID` - Tracking parcel with unique tracing id
 
 ---
 
@@ -117,11 +118,12 @@ src/
 
 - Only sender can cancel parcel (before `Dispatched`).
 - Only receiver can confirm delivery (when status is `In Transit`).
-- Only receiver can view their incoming parcels.
+- Only receiver can view their received parcels.
 - Blocked users/parcels cannot access features.
 - Admin can block/unblock users/parcels, update statuses.
 - Only sender can view their parcels.
-- Unique tracking ID for each parcel.
+- Unique tracking ID for tracking each parcel.
+- Fee calculation according flat rate.
 
 ---
 

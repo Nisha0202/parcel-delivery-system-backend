@@ -3,9 +3,9 @@ import Parcel from './parcel.model';
 import User from '../user/user.model';
 import { generateTrackingId } from '../../utils/generateTrackingId';
 
-// Helper: Fee calculation (flat rate for now)
+// Helper: Fee calculation (flat rate)
 function calculateFee(weight: number) {
-  return Math.max(50, weight * 20); // Rs. 50 minimum, Rs. 20/kg
+  return Math.max(50, weight * 20); 
 }
 
 // Sender: Create Parcel
@@ -75,7 +75,8 @@ export const incomingParcels = async (req: any, res: Response) => {
 // Receiver: Confirm Delivery
 export const confirmDelivery = async (req: any, res: Response) => {
   const parcel = await Parcel.findOne({ _id: req.params.id, receiver: req.user._id });
-  if (!parcel) return res.status(404).json({ success: false, message: 'Parcel not found' });
+  if (!parcel) 
+    return res.status(404).json({ success: false, message: 'Parcel not found' });
   if (parcel.status !== 'In Transit') {
     return res.status(422).json({ success: false, message: 'Parcel not ready for delivery confirmation' });
   }
@@ -107,7 +108,8 @@ export const listAllParcels = async (req: Request, res: Response) => {
 // Admin: Block Parcel
 export const blockParcel = async (req: Request, res: Response) => {
   const parcel = await Parcel.findByIdAndUpdate(req.params.id, { isBlocked: true, status: 'Blocked' }, { new: true });
-  if (!parcel) return res.status(404).json({ success: false, message: 'Parcel not found' });
+  if (!parcel) 
+    return res.status(404).json({ success: false, message: 'Parcel not found' });
   parcel.trackingEvents.push({
     status: 'Blocked',
     timestamp: new Date(),
@@ -145,8 +147,10 @@ export const updateParcelStatus = async (req: any, res: Response) => {
 // Shared: Get Parcel by ID
 export const getParcelById = async (req: any, res: Response) => {
   const parcel = await Parcel.findById(req.params.id);
-  if (!parcel) return res.status(404).json({ success: false, message: 'Parcel not found' });
-  if (parcel.isBlocked) return res.status(403).json({ success: false, message: 'Parcel is blocked' });
+  if (!parcel) 
+    return res.status(404).json({ success: false, message: 'Parcel not found' });
+  if (parcel.isBlocked) 
+    return res.status(403).json({ success: false, message: 'Parcel is blocked' });
   // Only sender, receiver, or admin can view
   if (
     req.user.role === 'admin' ||
@@ -161,7 +165,8 @@ export const getParcelById = async (req: any, res: Response) => {
 // Shared: Get Status Log
 export const getParcelStatusLog = async (req: any, res: Response) => {
   const parcel = await Parcel.findById(req.params.id);
-  if (!parcel) return res.status(404).json({ success: false, message: 'Parcel not found' });
+  if (!parcel) 
+    return res.status(404).json({ success: false, message: 'Parcel not found' });
   if (
     req.user.role === 'admin' ||
     parcel.sender.equals(req.user._id) ||
@@ -170,4 +175,25 @@ export const getParcelStatusLog = async (req: any, res: Response) => {
     return res.json({ success: true, data: parcel.trackingEvents });
   }
   return res.status(403).json({ success: false, message: 'Forbidden: Not authorized' });
+};
+
+export const getParcelByTrackingId = async (req: Request, res: Response) => {
+  const parcel = await Parcel.findOne({ trackingId: req.params.trackingId });
+  if (!parcel || parcel.isBlocked || parcel.status === 'Canceled') {
+    return res.status(404).json({ success: false, message: 'Parcel not found' });
+  }
+
+  res.json({
+    success: true,
+    data: {
+      trackingId: parcel.trackingId,
+      currentStatus: parcel.status,
+      history: parcel.trackingEvents.map(event => ({
+        status: event.status,
+        timestamp: event.timestamp,
+        note: event.note,
+        location: event.location || ''
+      }))
+    }
+  });
 };
