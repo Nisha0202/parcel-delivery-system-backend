@@ -47,10 +47,6 @@ const parcelSchema = new mongoose.Schema({
   couponCode: {
      type: String,
     default: null },
-  discountAmount: {
-     type: Number, 
-     default: 0 },
-
   deliveryDate: { 
     type: Date },
   status: { 

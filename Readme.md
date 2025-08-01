@@ -95,6 +95,7 @@ src/
 - **pickupAddress:** string
 - **deliveryAddress:** string
 - **fee:** number
+- **couponCode:** number
 - **deliveryDate:** Date
 - **status:** string (`Requested`, `Approved`, `Dispatched`, `In Transit`, `Delivered`, `Canceled`, `Blocked`)
 - **isBlocked:** boolean
@@ -124,6 +125,7 @@ src/
 - Only sender can view their parcels.
 - Unique tracking ID for tracking each parcel.
 - Fee calculation according flat rate.
+- Fee discounted by 50tk if "Save50" coupon code used.
 
 ---
 

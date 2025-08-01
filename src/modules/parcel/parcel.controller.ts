@@ -10,7 +10,15 @@ function calculateFee(weight: number) {
 
 // Sender: Create Parcel
 export const createParcel = async (req: any, res: Response) => {
-  const { type, weight, receiverId, pickupAddress, deliveryAddress, deliveryDate } = req.body;
+  const {
+    type,
+    weight,
+    receiverId,
+    pickupAddress,
+    deliveryAddress,
+    deliveryDate,
+    couponCode,
+  } = req.body;
 
   const receiver = await User.findById(receiverId);
   if (!receiver || receiver.role !== 'receiver') {
@@ -18,7 +26,14 @@ export const createParcel = async (req: any, res: Response) => {
   }
 
   const trackingId = generateTrackingId();
-  const fee = calculateFee(weight);
+  let fee = calculateFee(weight);
+
+  // Apply discount if coupon is "Save50"
+  let discountAmount = 0;
+  if (couponCode === 'Save50') {
+    discountAmount = 50;
+    fee = Math.max(0, fee - discountAmount); // Prevent negative fees
+  }
 
   const parcel = await Parcel.create({
     trackingId,
@@ -30,6 +45,8 @@ export const createParcel = async (req: any, res: Response) => {
     deliveryAddress,
     deliveryDate,
     fee,
+    couponCode: couponCode || null,
+    discountAmount,
     status: 'Requested',
     trackingEvents: [{
       status: 'Requested',
@@ -41,6 +58,7 @@ export const createParcel = async (req: any, res: Response) => {
 
   res.status(201).json({ success: true, data: parcel });
 };
+
 
 // Sender: List My Parcels
 export const listMyParcels = async (req: any, res: Response) => {

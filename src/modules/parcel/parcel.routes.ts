@@ -27,7 +27,7 @@ router.patch('/:id/status', authenticate, authorizeRole('admin'), updateParcelSt
 // Shared
 router.get('/:id', authenticate, getParcelById);
 router.get('/:id/status-log', authenticate, getParcelStatusLog);
-router.get('/track/:trackingId', getParcelByTrackingId);
+router.get('/track/:trackingId',authenticate, getParcelByTrackingId);
 
 
 export default router;

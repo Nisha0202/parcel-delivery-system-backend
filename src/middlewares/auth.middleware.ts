@@ -14,7 +14,8 @@ export const authenticate = async (req: AuthRequest, res: Response, next: NextFu
   const token = authHeader.split(' ')[1];
   try {
     const decoded: any = jwt.verify(token, process.env.JWT_SECRET!);
-    const user = await User.findById(decoded.id);
+    const user = await User.findById(decoded.i);
+    console.log(user);
     if (!user || user.isBlocked) {
       return res.status(403).json({ success: false, message: 'User blocked or not found' });
     }
