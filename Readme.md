@@ -20,6 +20,16 @@ A secure, modular Express.js and Mongoose backend for a parcel delivery system w
 
 ---
 
+## 🛠 Tech Stack
+
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB, Mongoose
+- **Auth:** JWT, bcrypt
+- **Testing:** Postman
+
+
+---
+
 ## 🗂 Folder Structure
 
 ```
@@ -71,12 +81,12 @@ src/
 
 #### Receiver
 - `GET /api/parcels/received` – View incoming parcels
-- `PATCH /api/parcels/:id/confirm` – Confirm delivery
+- `PATCH /api/parcels/:id/confirm` – Confirm delivery (if in transit)
 
 #### Admin
 - `GET /api/parcels` – List all parcels (filterable)
 - `PATCH /api/parcels/:id/block` – Block parcel
-- `PATCH /api/parcels/:id/status` – Update parcel status
+- `PATCH /api/parcels/:id/status` – Update parcel status (approved, dispatched, in transit)
 
 #### Shared
 - `GET /api/parcels/:id` – View parcel details (sender, receiver, admin)
