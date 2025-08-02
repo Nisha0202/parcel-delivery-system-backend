@@ -206,6 +206,7 @@ export const getParcelStatusLog = async (req: any, res: Response) => {
   return res.status(403).json({ success: false, message: 'Forbidden: Not authorized' });
 };
 
+// Shared: Get Parcel Info by TrackingId
 export const getParcelByTrackingId = async (req: Request, res: Response) => {
   const parcel = await Parcel.findOne({ trackingId: req.params.trackingId });
   if (!parcel || parcel.isBlocked || parcel.status === 'Canceled') {

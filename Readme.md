@@ -172,12 +172,6 @@ src/
 
 ---
 
-## 🎥 Demo Video
-
-- See `demo.mp4` for full walkthrough.
-
----
-
 ## 💡 Design Decisions
 
 - **Parcel creation:** Only sender can create.
