@@ -141,7 +141,7 @@ src/
 
 ## 📄 API Documentation
 
-- All endpoints documented in `/postman_collection.json`
+- All endpoints documented in `/parcel-delivery-api.postman_collection.json`
 - Each endpoint returns:
     - Success: `{ success: true, data: ... }`
     - Error: `{ success: false, message: ... }`
@@ -177,12 +177,12 @@ src/
 - **Parcel creation:** Only sender can create.
 - **Tracking ID:** Auto-generated, unique.
 - **Status log:** Embedded in parcel for easy history.
-- **Fee:** Flat rate (extendable).
+- **Fee:** Flat rate.
 - **Blocked logic:** Checked on user and parcel access.
 - **Status flow:** `Requested → Approved → Dispatched → In Transit → Delivered`, admin can update status.
 - **No delete:** Parcels can't be deleted, only canceled/blocked.
 - **Search/filter:** Admin can filter by status/date.
-- **Tracking public:** Optionally, can add endpoint for tracking by ID.
+- **Tracking with TrackingID:** Added endpoint for tracking by ID.
 
 ---
 

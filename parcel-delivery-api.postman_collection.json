@@ -1,0 +1,2836 @@
+{
+	"info": {
+		"_postman_id": "365f726d-8268-4e89-bad5-a7bf6e4b1ccc",
+		"name": "parcel-delivery-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47167219",
+		"_collection_link": "https://cryosat-architect-80398911-7926006.postman.co/workspace/e3a5ae08-e5d7-4b8d-8580-e52303ebc686/collection/47167219-365f726d-8268-4e89-bad5-a7bf6e4b1ccc?action=share&source=collection_link&creator=47167219"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"User\",\r\n  \"email\": \"user@example.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"receiver\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/auth/register",
+					"host": [
+						"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Sender\",\r\n  \"email\": \"sender@example.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"sender\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/auth/register",
+							"host": [
+								"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "297"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 16:40:25 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"129-9avYOWKbDgl+P8/8Ss9mzKfz0rU\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::cgmv4-1754066420144-5811febdb3d7"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"Sender\",\n        \"email\": \"sender@example.com\",\n        \"password\": \"$2b$10$kvAMJHfKL0Qd9wzSlc1kEeWTVUer9EjyQ3MNg4SQt7DeW/sd8TIpy\",\n        \"role\": \"sender\",\n        \"isBlocked\": false,\n        \"_id\": \"688cedf8484cda03a4808e52\",\n        \"createdAt\": \"2025-08-01T16:40:24.976Z\",\n        \"updatedAt\": \"2025-08-01T16:40:24.976Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"User\",\r\n  \"email\": \"user@example.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"receiver\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/auth/register",
+							"host": [
+								"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "295"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 13:10:03 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"127-JowRe9r0NCVU4xlQ0MVM0iP0qow\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::mr2p7-1754140197949-3b622e309b69"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"User\",\n        \"email\": \"user@example.com\",\n        \"password\": \"$2b$10$IQrXX66i/iG2fR4DerlpDu.CQTupi/bqeh9r1pQQWcHoJIcsFOmLu\",\n        \"role\": \"receiver\",\n        \"isBlocked\": false,\n        \"_id\": \"688e0e2a0a8d3f40dfdbf737\",\n        \"createdAt\": \"2025-08-02T13:10:02.795Z\",\n        \"updatedAt\": \"2025-08-02T13:10:02.795Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "create-parcel-sender-only",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4Y2VkZjg0ODRjZGEwM2E0ODA4ZTUyIiwiciI6InNlbmRlciIsImlhdCI6MTc1NDA2NzI0NywiZXhwIjoxNzU0NjcyMDQ3fQ.0Jl9FhGLjaAlmUuSj0lxB6mwOC1tYmacsDJlO0SMLJQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"Mobile Phone\",\r\n  \"weight\": 0.5,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Elephant Road\",\r\n  \"deliveryAddress\": \"Dhanmondi 15/A\",\r\n  \"deliveryDate\": \"2025-08-08\",\r\n  \"couponCode\": \"SAVE50\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/parcels",
+					"host": [
+						"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+					],
+					"path": [
+						"api",
+						"parcels"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-parcel",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"Yogurt\",\r\n  \"weight\": 2,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Dhanmondi 27\",\r\n  \"deliveryAddress\": \"Uttara Sector 10\",\r\n  \"deliveryDate\": \"2025-08-05\",\r\n  \"couponCode\": \"Save50\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/parcels",
+							"host": [
+								"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+							],
+							"path": [
+								"api",
+								"parcels"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "607"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 16:56:13 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"25f-5MB5ab95cgnQmUoBPpklJ2Vw+do\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::5s896-1754067372334-d605c7d0d802"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"trackingId\": \"TRK-20250801-39UE8P\",\n        \"type\": \"Yogurt\",\n        \"weight\": 2,\n        \"sender\": \"688cedf8484cda03a4808e52\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"Dhanmondi 27\",\n        \"deliveryAddress\": \"Uttara Sector 10\",\n        \"fee\": 110,\n        \"couponCode\": \"Save50\",\n        \"deliveryDate\": \"2025-08-05T00:00:00.000Z\",\n        \"status\": \"Requested\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-08-01T16:56:12.819Z\",\n                \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                \"note\": \"Parcel requested\"\n            }\n        ],\n        \"_id\": \"688cf1accf81a934090968d3\",\n        \"createdAt\": \"2025-08-01T16:56:12.825Z\",\n        \"updatedAt\": \"2025-08-01T16:56:12.825Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "create-parcel",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"Groceries\",\r\n  \"weight\": 5,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Mohakhali Kitchen Market\",\r\n  \"deliveryAddress\": \"Bashundhara R/A, Block G\",\r\n  \"deliveryDate\": \"2025-08-07\",\r\n  \"couponCode\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/parcels",
+							"host": [
+								"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+							],
+							"path": [
+								"api",
+								"parcels"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "626"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 07:22:11 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"272-Wgf5nguOwXMJfqOqPHGVMYCxjHY\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::flxtn-1754119331048-058bcf1ad8d6"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"trackingId\": \"TRK-20250802-B6IF8V\",\n        \"type\": \"Groceries\",\n        \"weight\": 5,\n        \"sender\": \"688cedf8484cda03a4808e52\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"Mohakhali Kitchen Market\",\n        \"deliveryAddress\": \"Bashundhara R/A, Block G\",\n        \"fee\": 400,\n        \"couponCode\": null,\n        \"deliveryDate\": \"2025-08-07T00:00:00.000Z\",\n        \"status\": \"Requested\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-08-02T07:22:11.585Z\",\n                \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                \"note\": \"Parcel requested\"\n            }\n        ],\n        \"_id\": \"688dbca33c7d3a9026d7fcdc\",\n        \"createdAt\": \"2025-08-02T07:22:11.591Z\",\n        \"updatedAt\": \"2025-08-02T07:22:11.591Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "create-parcel",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"Mobile Phone\",\r\n  \"weight\": 0.5,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Elephant Road\",\r\n  \"deliveryAddress\": \"Dhanmondi 15/A\",\r\n  \"deliveryDate\": \"2025-08-08\",\r\n  \"couponCode\": \"SAVE50\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/parcels",
+							"host": [
+								"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+							],
+							"path": [
+								"api",
+								"parcels"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "613"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 07:23:37 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"265-O1bTJQt21TgaQlmgSatqlJirtm8\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::8l278-1754119417105-109f574395c8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"trackingId\": \"TRK-20250802-7FLV4O\",\n        \"type\": \"Mobile Phone\",\n        \"weight\": 0.5,\n        \"sender\": \"688cedf8484cda03a4808e52\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"Elephant Road\",\n        \"deliveryAddress\": \"Dhanmondi 15/A\",\n        \"fee\": 40,\n        \"couponCode\": \"SAVE50\",\n        \"deliveryDate\": \"2025-08-08T00:00:00.000Z\",\n        \"status\": \"Requested\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-08-02T07:23:37.574Z\",\n                \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                \"note\": \"Parcel requested\"\n            }\n        ],\n        \"_id\": \"688dbcf93c7d3a9026d7fce0\",\n        \"createdAt\": \"2025-08-02T07:23:37.576Z\",\n        \"updatedAt\": \"2025-08-02T07:23:37.576Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "filter-admin-only",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4YjdhNjc2YjVkNzcwYWI2Nzg1OWJmIiwiciI6ImFkbWluIiwiaWF0IjoxNzU0MDY2NjY5LCJleHAiOjE3NTQ2NzE0Njl9.SRA4W6IwEAbUTKS9BDT-sjopr1TIXhFLWX-Ba5SbACs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/parcels?status=Approved&from=2024-01-01&to=2025-12-12\n",
+					"host": [
+						"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+					],
+					"path": [
+						"api",
+						"parcels"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "Approved"
+						},
+						{
+							"key": "from",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "to",
+							"value": "2025-12-12\n"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "filter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/parcels?status=Approved&from=2024-01-01&to=2025-12-12\n",
+							"host": [
+								"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+							],
+							"path": [
+								"api",
+								"parcels"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "Approved"
+								},
+								{
+									"key": "from",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "to",
+									"value": "2025-12-12\n"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "608"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 07:18:59 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"260-hCOxjd+DD2fRJqZVMyU1FKqqee8\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "BYPASS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::8tbbd-1754119133880-09885b6cd0e5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"couponCode\": null,\n            \"_id\": \"6888d5e2f13a51c12fe2fe32\",\n            \"trackingId\": \"TRK-20250729-POLSJ2\",\n            \"type\": \"Clothing\",\n            \"weight\": 1.2,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"19 Fashion Blvd\",\n            \"deliveryAddress\": \"88 Market Lane\",\n            \"fee\": 50,\n            \"deliveryDate\": \"2025-08-12T00:00:00.000Z\",\n            \"status\": \"Approved\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-07-29T14:08:34.694Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                }\n            ],\n            \"createdAt\": \"2025-07-29T14:08:34.702Z\",\n            \"updatedAt\": \"2025-07-29T14:08:34.702Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "admin-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"admin@example.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/auth/login",
+					"host": [
+						"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "admin-login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"admin@example.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bashttps://parcel-delivery-api.vercel.appeURL}}/api/auth/login",
+							"host": [
+								"{{bashttps://parcel-delivery-api.vercel.appeURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "283"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 16:47:57 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"11b-Ked5IyzyXgE5DHvmVoXaMMOCJFk\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::s9thb-1754066877243-44780684812c"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4YjdhNjc2YjVkNzcwYWI2Nzg1OWJmIiwiciI6ImFkbWluIiwiaWF0IjoxNzU0MDY2ODc3LCJleHAiOjE3NTQ2NzE2Nzd9.-fIbqa6qRL4ZxNq5on5xmXTgyEoWjAnj76XWoFI_2J8\",\n    \"data\": {\n        \"id\": \"688b7a676b5d770ab67859bf\",\n        \"name\": \"Admin\",\n        \"role\": \"admin\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "show-all-parcels-admin-only",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"sender@example.com\",\r\n  \"password\": \"123456\"\r\n \r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "show-all-parcels",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n \r\n"
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 16:51:28 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"d9b-x8S+DcEMkYkh79+OoR4unVPvzBQ\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "BYPASS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::vjpcr-1754067087783-7a7c2da54250"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"couponCode\": null,\n            \"_id\": \"6888d58af13a51c12fe2fe2a\",\n            \"trackingId\": \"TRK-20250729-YFHLY4\",\n            \"type\": \"Electronics\",\n            \"weight\": 3.5,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"123 Pickup Lane\",\n            \"deliveryAddress\": \"456 Delivery Ave\",\n            \"fee\": 70,\n            \"deliveryDate\": \"2025-08-10T00:00:00.000Z\",\n            \"status\": \"Delivered\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-07-29T14:07:06.017Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                },\n                {\n                    \"status\": \"Dispatched\",\n                    \"timestamp\": \"2025-07-29T14:29:37.832Z\",\n                    \"location\": \"Dhaka Warehouse\",\n                    \"updatedBy\": \"6888a2d79056afa1e5d5db75\",\n                    \"note\": \"Parcel handed to delivery van\"\n                },\n                {\n                    \"status\": \"In Transit\",\n                    \"timestamp\": \"2025-07-29T14:36:49.086Z\",\n                    \"updatedBy\": \"6888a2d79056afa1e5d5db75\"\n                },\n                {\n                    \"status\": \"Delivered\",\n                    \"timestamp\": \"2025-07-29T14:36:57.333Z\",\n                    \"updatedBy\": \"6888d523f13a51c12fe2fe25\",\n                    \"note\": \"Receiver confirmed delivery\"\n                }\n            ],\n            \"createdAt\": \"2025-07-29T14:07:06.038Z\",\n            \"updatedAt\": \"2025-07-29T14:36:57.337Z\",\n            \"__v\": 3\n        },\n        {\n            \"couponCode\": null,\n            \"_id\": \"6888d5cdf13a51c12fe2fe2e\",\n            \"trackingId\": \"TRK-20250729-A5OPTG\",\n            \"type\": \"Books\",\n            \"weight\": 2,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"75 Library Road\",\n            \"deliveryAddress\": \"22 College Street\",\n            \"fee\": 50,\n            \"deliveryDate\": \"2025-08-15T00:00:00.000Z\",\n            \"status\": \"Requested\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-07-29T14:08:13.952Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                }\n            ],\n            \"createdAt\": \"2025-07-29T14:08:13.957Z\",\n            \"updatedAt\": \"2025-07-29T14:08:13.957Z\",\n            \"__v\": 0\n        },\n        {\n            \"couponCode\": null,\n            \"_id\": \"6888d5e2f13a51c12fe2fe32\",\n            \"trackingId\": \"TRK-20250729-POLSJ2\",\n            \"type\": \"Clothing\",\n            \"weight\": 1.2,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"19 Fashion Blvd\",\n            \"deliveryAddress\": \"88 Market Lane\",\n            \"fee\": 50,\n            \"deliveryDate\": \"2025-08-12T00:00:00.000Z\",\n            \"status\": \"Approved\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-07-29T14:08:34.694Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                }\n            ],\n            \"createdAt\": \"2025-07-29T14:08:34.702Z\",\n            \"updatedAt\": \"2025-07-29T14:08:34.702Z\",\n            \"__v\": 0\n        },\n        {\n            \"couponCode\": null,\n            \"_id\": \"6888dd00f13a51c12fe2fe4d\",\n            \"trackingId\": \"TRK-20250729-WL9ET4\",\n            \"type\": \"Clothing\",\n            \"weight\": 1.2,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"19 Fashion Blvd\",\n            \"deliveryAddress\": \"88 Market Lane\",\n            \"fee\": 50,\n            \"deliveryDate\": \"2025-08-12T00:00:00.000Z\",\n            \"status\": \"Canceled\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-07-29T14:38:56.753Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                },\n                {\n                    \"status\": \"Canceled\",\n                    \"timestamp\": \"2025-07-29T14:53:23.155Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Sender canceled\"\n                }\n            ],\n            \"createdAt\": \"2025-07-29T14:38:56.759Z\",\n            \"updatedAt\": \"2025-07-29T14:53:23.160Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"688ca91788a5bb9b5ae8cbee\",\n            \"trackingId\": \"TRK-20250801-BAHHSZ\",\n            \"type\": \"Document\",\n            \"weight\": 2,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"Dhanmondi 27\",\n            \"deliveryAddress\": \"Uttara Sector 10\",\n            \"fee\": 110,\n            \"couponCode\": \"Save50\",\n            \"deliveryDate\": \"2025-08-05T00:00:00.000Z\",\n            \"status\": \"Requested\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-08-01T11:46:31.523Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                }\n            ],\n            \"createdAt\": \"2025-08-01T11:46:31.554Z\",\n            \"updatedAt\": \"2025-08-01T11:46:31.554Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "sender-login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"sender@example.com\",\r\n\"password\": \"123456\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sender-login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\": \"sender@example.com\",\r\n\"password\": \"123456\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "287"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 16:54:07 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"11f-qfzgYNAi0Lur2EbLPtw/EZlP/L0\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::hjfcr-1754067247044-7ed26dc87f9e"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4Y2VkZjg0ODRjZGEwM2E0ODA4ZTUyIiwiciI6InNlbmRlciIsImlhdCI6MTc1NDA2NzI0NywiZXhwIjoxNzU0NjcyMDQ3fQ.0Jl9FhGLjaAlmUuSj0lxB6mwOC1tYmacsDJlO0SMLJQ\",\n    \"data\": {\n        \"id\": \"688cedf8484cda03a4808e52\",\n        \"name\": \"Sender\",\n        \"role\": \"sender\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "track-with-trackingId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4Y2VkZjg0ODRjZGEwM2E0ODA4ZTUyIiwiciI6InNlbmRlciIsImlhdCI6MTc1NDA2NzI0NywiZXhwIjoxNzU0NjcyMDQ3fQ.0Jl9FhGLjaAlmUuSj0lxB6mwOC1tYmacsDJlO0SMLJQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/track/TRK-20250729-YFHLY4",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"track",
+						"TRK-20250729-YFHLY4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "track-wit-id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/track/TRK-20250729-YFHLY4",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"track",
+								"TRK-20250729-YFHLY4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "523"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 17:24:08 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"20b-oCFb7TXG8G4BB7SRZYebqBcrYu0\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "BYPASS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::5w2hw-1754069043028-09051e68d7f3"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"trackingId\": \"TRK-20250729-YFHLY4\",\n        \"currentStatus\": \"Delivered\",\n        \"history\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-07-29T14:07:06.017Z\",\n                \"note\": \"Parcel requested\",\n                \"location\": \"\"\n            },\n            {\n                \"status\": \"Dispatched\",\n                \"timestamp\": \"2025-07-29T14:29:37.832Z\",\n                \"note\": \"Parcel handed to delivery van\",\n                \"location\": \"Dhaka Warehouse\"\n            },\n            {\n                \"status\": \"In Transit\",\n                \"timestamp\": \"2025-07-29T14:36:49.086Z\",\n                \"location\": \"\"\n            },\n            {\n                \"status\": \"Delivered\",\n                \"timestamp\": \"2025-07-29T14:36:57.333Z\",\n                \"note\": \"Receiver confirmed delivery\",\n                \"location\": \"\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "show-all-parcel-sender-created",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4Y2VkZjg0ODRjZGEwM2E0ODA4ZTUyIiwiciI6InNlbmRlciIsImlhdCI6MTc1NDA2NzI0NywiZXhwIjoxNzU0NjcyMDQ3fQ.0Jl9FhGLjaAlmUuSj0lxB6mwOC1tYmacsDJlO0SMLJQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/me",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"me"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "all-parcel-sender-created",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/me",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"me"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "609"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 17:25:24 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"261-aKkBMNAZFx9L3wmMIb1zPhnJEYs\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "BYPASS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::kc2pw-1754069123615-a72cd8c68ae1"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"688cf1accf81a934090968d3\",\n            \"trackingId\": \"TRK-20250801-39UE8P\",\n            \"type\": \"Yogurt\",\n            \"weight\": 2,\n            \"sender\": \"688cedf8484cda03a4808e52\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"Dhanmondi 27\",\n            \"deliveryAddress\": \"Uttara Sector 10\",\n            \"fee\": 110,\n            \"couponCode\": \"Save50\",\n            \"deliveryDate\": \"2025-08-05T00:00:00.000Z\",\n            \"status\": \"Requested\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-08-01T16:56:12.819Z\",\n                    \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                    \"note\": \"Parcel requested\"\n                }\n            ],\n            \"createdAt\": \"2025-08-01T16:56:12.825Z\",\n            \"updatedAt\": \"2025-08-01T16:56:12.825Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "parcel-status-update-admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4YjdhNjc2YjVkNzcwYWI2Nzg1OWJmIiwiciI6ImFkbWluIiwiaWF0IjoxNzU0MDY2ODc3LCJleHAiOjE3NTQ2NzE2Nzd9.-fIbqa6qRL4ZxNq5on5xmXTgyEoWjAnj76XWoFI_2J8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"In Transit\"\r\n  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688dbcf93c7d3a9026d7fce0/status",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"688dbcf93c7d3a9026d7fce0",
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "parcel-status-update-admin",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"In Transit\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/6888d5cdf13a51c12fe2fe2e/status",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"6888d5cdf13a51c12fe2fe2e",
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "708"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 17:36:43 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2c4-socOLY+DkqJrxvX5Xuado2VR23A\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::cl669-1754069798264-33b65c897911"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"couponCode\": null,\n        \"_id\": \"6888d5cdf13a51c12fe2fe2e\",\n        \"trackingId\": \"TRK-20250729-A5OPTG\",\n        \"type\": \"Books\",\n        \"weight\": 2,\n        \"sender\": \"68889fad9056afa1e5d5db71\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"75 Library Road\",\n        \"deliveryAddress\": \"22 College Street\",\n        \"fee\": 50,\n        \"deliveryDate\": \"2025-08-15T00:00:00.000Z\",\n        \"status\": \"In Transit\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-07-29T14:08:13.952Z\",\n                \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                \"note\": \"Parcel requested\"\n            },\n            {\n                \"status\": \"In Transit\",\n                \"timestamp\": \"2025-08-01T17:36:43.389Z\",\n                \"updatedBy\": \"688b7a676b5d770ab67859bf\"\n            }\n        ],\n        \"createdAt\": \"2025-07-29T14:08:13.957Z\",\n        \"updatedAt\": \"2025-08-01T17:36:43.393Z\",\n        \"__v\": 1\n    }\n}"
+				},
+				{
+					"name": "parcel-status-update-admin",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"In Transit\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/6888d5e2f13a51c12fe2fe32/status",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"6888d5e2f13a51c12fe2fe32",
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "710"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 08:36:07 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2c6-rgy8LZ+ArOIKUTvEZqeQmewnukQ\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::xn9vl-1754123766344-314e598d3805"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"couponCode\": null,\n        \"_id\": \"6888d5e2f13a51c12fe2fe32\",\n        \"trackingId\": \"TRK-20250729-POLSJ2\",\n        \"type\": \"Clothing\",\n        \"weight\": 1.2,\n        \"sender\": \"68889fad9056afa1e5d5db71\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"19 Fashion Blvd\",\n        \"deliveryAddress\": \"88 Market Lane\",\n        \"fee\": 50,\n        \"deliveryDate\": \"2025-08-12T00:00:00.000Z\",\n        \"status\": \"In Transit\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-07-29T14:08:34.694Z\",\n                \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                \"note\": \"Parcel requested\"\n            },\n            {\n                \"status\": \"In Transit\",\n                \"timestamp\": \"2025-08-02T08:36:06.832Z\",\n                \"updatedBy\": \"688b7a676b5d770ab67859bf\"\n            }\n        ],\n        \"createdAt\": \"2025-07-29T14:08:34.702Z\",\n        \"updatedAt\": \"2025-08-02T08:36:06.836Z\",\n        \"__v\": 1\n    }\n}"
+				},
+				{
+					"name": "parcel-status-update-admin",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"In Transit\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688dbcf93c7d3a9026d7fce0/status",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"688dbcf93c7d3a9026d7fce0",
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "716"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 14:49:55 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2cc-J8FeuVSrO2nbyzpXpKa37f1wPEs\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::grz4c-1754146190070-df0531843a5c"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"688dbcf93c7d3a9026d7fce0\",\n        \"trackingId\": \"TRK-20250802-7FLV4O\",\n        \"type\": \"Mobile Phone\",\n        \"weight\": 0.5,\n        \"sender\": \"688cedf8484cda03a4808e52\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"Elephant Road\",\n        \"deliveryAddress\": \"Dhanmondi 15/A\",\n        \"fee\": 40,\n        \"couponCode\": \"SAVE50\",\n        \"deliveryDate\": \"2025-08-08T00:00:00.000Z\",\n        \"status\": \"In Transit\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-08-02T07:23:37.574Z\",\n                \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                \"note\": \"Parcel requested\"\n            },\n            {\n                \"status\": \"In Transit\",\n                \"timestamp\": \"2025-08-02T14:49:55.278Z\",\n                \"updatedBy\": \"688b7a676b5d770ab67859bf\"\n            }\n        ],\n        \"createdAt\": \"2025-08-02T07:23:37.576Z\",\n        \"updatedAt\": \"2025-08-02T14:49:55.283Z\",\n        \"__v\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "receiver-login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4Y2VkZjg0ODRjZGEwM2E0ODA4ZTUyIiwiciI6InNlbmRlciIsImlhdCI6MTc1NDA2NzI0NywiZXhwIjoxNzU0NjcyMDQ3fQ.0Jl9FhGLjaAlmUuSj0lxB6mwOC1tYmacsDJlO0SMLJQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"receiver@example.com\",\r\n  \"password\": \"SecurePass123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "receiver-login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"receiver@example.com\",\r\n  \"password\": \"SecurePass123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "293"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 17:38:11 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"125-7tGM0na/+S8npTKH8Qd20QQ7XE0\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::qwn2z-1754069891486-41f4e23405fb"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4OGQ1MjNmMTNhNTFjMTJmZTJmZTI1IiwiciI6InJlY2VpdmVyIiwiaWF0IjoxNzU0MDY5ODkxLCJleHAiOjE3NTQ2NzQ2OTF9.k2KEriFJhrs5SpSBz-uflct64iW9gsFVdcygzxmeddE\",\n    \"data\": {\n        \"id\": \"6888d523f13a51c12fe2fe25\",\n        \"name\": \"Receiver\",\n        \"role\": \"receiver\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "parcel-blocked-admin-only",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4YjdhNjc2YjVkNzcwYWI2Nzg1OWJmIiwiciI6ImFkbWluIiwiaWF0IjoxNzU0MDY2ODc3LCJleHAiOjE3NTQ2NzE2Nzd9.-fIbqa6qRL4ZxNq5on5xmXTgyEoWjAnj76XWoFI_2J8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688cf1accf81a934090968d3/block",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"688cf1accf81a934090968d3",
+						"block"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "parcel-blocked-admin-only",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688cf1accf81a934090968d3/block",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"688cf1accf81a934090968d3",
+								"block"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "733"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 07:31:55 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2dd-Qj9PTi4GtIUZVkB6JHVufBuWdYM\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::lrh29-1754119913062-abc8addf5473"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"688cf1accf81a934090968d3\",\n        \"trackingId\": \"TRK-20250801-39UE8P\",\n        \"type\": \"Yogurt\",\n        \"weight\": 2,\n        \"sender\": \"688cedf8484cda03a4808e52\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"Dhanmondi 27\",\n        \"deliveryAddress\": \"Uttara Sector 10\",\n        \"fee\": 110,\n        \"couponCode\": \"Save50\",\n        \"deliveryDate\": \"2025-08-05T00:00:00.000Z\",\n        \"status\": \"Blocked\",\n        \"isBlocked\": true,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-08-01T16:56:12.819Z\",\n                \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                \"note\": \"Parcel requested\"\n            },\n            {\n                \"status\": \"Blocked\",\n                \"timestamp\": \"2025-08-02T07:31:54.844Z\",\n                \"updatedBy\": \"688b7a676b5d770ab67859bf\",\n                \"note\": \"Admin blocked parcel\"\n            }\n        ],\n        \"createdAt\": \"2025-08-01T16:56:12.825Z\",\n        \"updatedAt\": \"2025-08-02T07:31:54.849Z\",\n        \"__v\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "all-received-parcels-of-receiver",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4OGQ1MjNmMTNhNTFjMTJmZTJmZTI1IiwiciI6InJlY2VpdmVyIiwiaWF0IjoxNzU0MDY5ODkxLCJleHAiOjE3NTQ2NzQ2OTF9.k2KEriFJhrs5SpSBz-uflct64iW9gsFVdcygzxmeddE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"Mobile Phone\",\r\n  \"weight\": 0.5,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Elephant Road\",\r\n  \"deliveryAddress\": \"Dhanmondi 15/A\",\r\n  \"deliveryDate\": \"2025-08-08\",\r\n  \"couponCode\": \"SAVE50\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/received",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"received"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "all-sent-parcels-to-receiver",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"Mobile Phone\",\r\n  \"weight\": 0.5,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Elephant Road\",\r\n  \"deliveryAddress\": \"Dhanmondi 15/A\",\r\n  \"deliveryDate\": \"2025-08-08\",\r\n  \"couponCode\": \"SAVE50\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/received",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"received"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 07:38:58 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"1684-/+FHSKcbhWF1khBFsevmEGDETPI\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "BYPASS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::6dn74-1754120333469-e70a9f1abbee"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"couponCode\": null,\n            \"_id\": \"6888d58af13a51c12fe2fe2a\",\n            \"trackingId\": \"TRK-20250729-YFHLY4\",\n            \"type\": \"Electronics\",\n            \"weight\": 3.5,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"123 Pickup Lane\",\n            \"deliveryAddress\": \"456 Delivery Ave\",\n            \"fee\": 70,\n            \"deliveryDate\": \"2025-08-10T00:00:00.000Z\",\n            \"status\": \"Delivered\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-07-29T14:07:06.017Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                },\n                {\n                    \"status\": \"Dispatched\",\n                    \"timestamp\": \"2025-07-29T14:29:37.832Z\",\n                    \"location\": \"Dhaka Warehouse\",\n                    \"updatedBy\": \"6888a2d79056afa1e5d5db75\",\n                    \"note\": \"Parcel handed to delivery van\"\n                },\n                {\n                    \"status\": \"In Transit\",\n                    \"timestamp\": \"2025-07-29T14:36:49.086Z\",\n                    \"updatedBy\": \"6888a2d79056afa1e5d5db75\"\n                },\n                {\n                    \"status\": \"Delivered\",\n                    \"timestamp\": \"2025-07-29T14:36:57.333Z\",\n                    \"updatedBy\": \"6888d523f13a51c12fe2fe25\",\n                    \"note\": \"Receiver confirmed delivery\"\n                }\n            ],\n            \"createdAt\": \"2025-07-29T14:07:06.038Z\",\n            \"updatedAt\": \"2025-07-29T14:36:57.337Z\",\n            \"__v\": 3\n        },\n        {\n            \"couponCode\": null,\n            \"_id\": \"6888d5cdf13a51c12fe2fe2e\",\n            \"trackingId\": \"TRK-20250729-A5OPTG\",\n            \"type\": \"Books\",\n            \"weight\": 2,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"75 Library Road\",\n            \"deliveryAddress\": \"22 College Street\",\n            \"fee\": 50,\n            \"deliveryDate\": \"2025-08-15T00:00:00.000Z\",\n            \"status\": \"Delivered\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-07-29T14:08:13.952Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                },\n                {\n                    \"status\": \"In Transit\",\n                    \"timestamp\": \"2025-08-01T17:36:43.389Z\",\n                    \"updatedBy\": \"688b7a676b5d770ab67859bf\"\n                },\n                {\n                    \"status\": \"Delivered\",\n                    \"timestamp\": \"2025-08-01T17:39:50.853Z\",\n                    \"updatedBy\": \"6888d523f13a51c12fe2fe25\",\n                    \"note\": \"Receiver confirmed delivery\"\n                },\n                {\n                    \"status\": \"Delivered\",\n                    \"timestamp\": \"2025-08-01T17:48:48.960Z\",\n                    \"updatedBy\": \"6888d523f13a51c12fe2fe25\",\n                    \"note\": \"Receiver confirmed delivery\"\n                }\n            ],\n            \"createdAt\": \"2025-07-29T14:08:13.957Z\",\n            \"updatedAt\": \"2025-08-01T17:48:48.962Z\",\n            \"__v\": 3\n        },\n        {\n            \"couponCode\": null,\n            \"_id\": \"6888d5e2f13a51c12fe2fe32\",\n            \"trackingId\": \"TRK-20250729-POLSJ2\",\n            \"type\": \"Clothing\",\n            \"weight\": 1.2,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"19 Fashion Blvd\",\n            \"deliveryAddress\": \"88 Market Lane\",\n            \"fee\": 50,\n            \"deliveryDate\": \"2025-08-12T00:00:00.000Z\",\n            \"status\": \"Approved\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-07-29T14:08:34.694Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                }\n            ],\n            \"createdAt\": \"2025-07-29T14:08:34.702Z\",\n            \"updatedAt\": \"2025-07-29T14:08:34.702Z\",\n            \"__v\": 0\n        },\n        {\n            \"couponCode\": null,\n            \"_id\": \"6888dd00f13a51c12fe2fe4d\",\n            \"trackingId\": \"TRK-20250729-WL9ET4\",\n            \"type\": \"Clothing\",\n            \"weight\": 1.2,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"19 Fashion Blvd\",\n            \"deliveryAddress\": \"88 Market Lane\",\n            \"fee\": 50,\n            \"deliveryDate\": \"2025-08-12T00:00:00.000Z\",\n            \"status\": \"Canceled\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-07-29T14:38:56.753Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                },\n                {\n                    \"status\": \"Canceled\",\n                    \"timestamp\": \"2025-07-29T14:53:23.155Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Sender canceled\"\n                }\n            ],\n            \"createdAt\": \"2025-07-29T14:38:56.759Z\",\n            \"updatedAt\": \"2025-07-29T14:53:23.160Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"688ca91788a5bb9b5ae8cbee\",\n            \"trackingId\": \"TRK-20250801-BAHHSZ\",\n            \"type\": \"Document\",\n            \"weight\": 2,\n            \"sender\": \"68889fad9056afa1e5d5db71\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"Dhanmondi 27\",\n            \"deliveryAddress\": \"Uttara Sector 10\",\n            \"fee\": 110,\n            \"couponCode\": \"Save50\",\n            \"deliveryDate\": \"2025-08-05T00:00:00.000Z\",\n            \"status\": \"Requested\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-08-01T11:46:31.523Z\",\n                    \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                    \"note\": \"Parcel requested\"\n                }\n            ],\n            \"createdAt\": \"2025-08-01T11:46:31.554Z\",\n            \"updatedAt\": \"2025-08-01T11:46:31.554Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"688cf1accf81a934090968d3\",\n            \"trackingId\": \"TRK-20250801-39UE8P\",\n            \"type\": \"Yogurt\",\n            \"weight\": 2,\n            \"sender\": \"688cedf8484cda03a4808e52\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"Dhanmondi 27\",\n            \"deliveryAddress\": \"Uttara Sector 10\",\n            \"fee\": 110,\n            \"couponCode\": \"Save50\",\n            \"deliveryDate\": \"2025-08-05T00:00:00.000Z\",\n            \"status\": \"Blocked\",\n            \"isBlocked\": true,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-08-01T16:56:12.819Z\",\n                    \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                    \"note\": \"Parcel requested\"\n                },\n                {\n                    \"status\": \"Blocked\",\n                    \"timestamp\": \"2025-08-02T07:31:54.844Z\",\n                    \"updatedBy\": \"688b7a676b5d770ab67859bf\",\n                    \"note\": \"Admin blocked parcel\"\n                }\n            ],\n            \"createdAt\": \"2025-08-01T16:56:12.825Z\",\n            \"updatedAt\": \"2025-08-02T07:31:54.849Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"688dbca33c7d3a9026d7fcdc\",\n            \"trackingId\": \"TRK-20250802-B6IF8V\",\n            \"type\": \"Groceries\",\n            \"weight\": 5,\n            \"sender\": \"688cedf8484cda03a4808e52\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"Mohakhali Kitchen Market\",\n            \"deliveryAddress\": \"Bashundhara R/A, Block G\",\n            \"fee\": 400,\n            \"couponCode\": null,\n            \"deliveryDate\": \"2025-08-07T00:00:00.000Z\",\n            \"status\": \"Requested\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-08-02T07:22:11.585Z\",\n                    \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                    \"note\": \"Parcel requested\"\n                }\n            ],\n            \"createdAt\": \"2025-08-02T07:22:11.591Z\",\n            \"updatedAt\": \"2025-08-02T07:22:11.591Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"688dbcf93c7d3a9026d7fce0\",\n            \"trackingId\": \"TRK-20250802-7FLV4O\",\n            \"type\": \"Mobile Phone\",\n            \"weight\": 0.5,\n            \"sender\": \"688cedf8484cda03a4808e52\",\n            \"receiver\": \"6888d523f13a51c12fe2fe25\",\n            \"pickupAddress\": \"Elephant Road\",\n            \"deliveryAddress\": \"Dhanmondi 15/A\",\n            \"fee\": 40,\n            \"couponCode\": \"SAVE50\",\n            \"deliveryDate\": \"2025-08-08T00:00:00.000Z\",\n            \"status\": \"Requested\",\n            \"isBlocked\": false,\n            \"trackingEvents\": [\n                {\n                    \"status\": \"Requested\",\n                    \"timestamp\": \"2025-08-02T07:23:37.574Z\",\n                    \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                    \"note\": \"Parcel requested\"\n                }\n            ],\n            \"createdAt\": \"2025-08-02T07:23:37.576Z\",\n            \"updatedAt\": \"2025-08-02T07:23:37.576Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "cancel-parcel-sender-only",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4Y2VkZjg0ODRjZGEwM2E0ODA4ZTUyIiwiciI6InNlbmRlciIsImlhdCI6MTc1NDA2NzI0NywiZXhwIjoxNzU0NjcyMDQ3fQ.0Jl9FhGLjaAlmUuSj0lxB6mwOC1tYmacsDJlO0SMLJQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"Mobile Phone\",\r\n  \"weight\": 0.5,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Elephant Road\",\r\n  \"deliveryAddress\": \"Dhanmondi 15/A\",\r\n  \"deliveryDate\": \"2025-08-08\",\r\n  \"couponCode\": \"SAVE50\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688cf1accf81a934090968d3/cancel",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"688cf1accf81a934090968d3",
+						"cancel"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cancle-parcel-sender-only",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"Mobile Phone\",\r\n  \"weight\": 0.5,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Elephant Road\",\r\n  \"deliveryAddress\": \"Dhanmondi 15/A\",\r\n  \"deliveryDate\": \"2025-08-08\",\r\n  \"couponCode\": \"SAVE50\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688cf1accf81a934090968d3/cancel",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"688cf1accf81a934090968d3",
+								"cancel"
+							]
+						}
+					},
+					"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+					"code": 422,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 08:15:42 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"4f-qxdUn/9rfXVPMDPh918HNrfozXU\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::wbk7m-1754122537189-87f32da22011"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Cannot cancel dispatched/delivered/blocked parcel\"\n}"
+				}
+			]
+		},
+		{
+			"name": "cancle-parcel-sender-only",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4Y2VkZjg0ODRjZGEwM2E0ODA4ZTUyIiwiciI6InNlbmRlciIsImlhdCI6MTc1NDA2NzI0NywiZXhwIjoxNzU0NjcyMDQ3fQ.0Jl9FhGLjaAlmUuSj0lxB6mwOC1tYmacsDJlO0SMLJQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"Mobile Phone\",\r\n  \"weight\": 0.5,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Elephant Road\",\r\n  \"deliveryAddress\": \"Dhanmondi 15/A\",\r\n  \"deliveryDate\": \"2025-08-08\",\r\n  \"couponCode\": \"SAVE50\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688dbca33c7d3a9026d7fcdc/cancel",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"688dbca33c7d3a9026d7fcdc",
+						"cancel"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cancel-parcel-sender-only",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"Mobile Phone\",\r\n  \"weight\": 0.5,\r\n  \"receiverId\": \"6888d523f13a51c12fe2fe25\",\r\n  \"pickupAddress\": \"Elephant Road\",\r\n  \"deliveryAddress\": \"Dhanmondi 15/A\",\r\n  \"deliveryDate\": \"2025-08-08\",\r\n  \"couponCode\": \"SAVE50\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688dbca33c7d3a9026d7fcdc/cancel",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"688dbca33c7d3a9026d7fcdc",
+								"cancel"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "750"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 08:20:38 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2ee-rc3vp928QkSA2Di/myR/aJhzRIQ\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::427tv-1754122837376-38ac18adce19"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"688dbca33c7d3a9026d7fcdc\",\n        \"trackingId\": \"TRK-20250802-B6IF8V\",\n        \"type\": \"Groceries\",\n        \"weight\": 5,\n        \"sender\": \"688cedf8484cda03a4808e52\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"Mohakhali Kitchen Market\",\n        \"deliveryAddress\": \"Bashundhara R/A, Block G\",\n        \"fee\": 400,\n        \"couponCode\": null,\n        \"deliveryDate\": \"2025-08-07T00:00:00.000Z\",\n        \"status\": \"Canceled\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-08-02T07:22:11.585Z\",\n                \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                \"note\": \"Parcel requested\"\n            },\n            {\n                \"status\": \"Canceled\",\n                \"timestamp\": \"2025-08-02T08:20:37.895Z\",\n                \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                \"note\": \"Sender canceled\"\n            }\n        ],\n        \"createdAt\": \"2025-08-02T07:22:11.591Z\",\n        \"updatedAt\": \"2025-08-02T08:20:37.899Z\",\n        \"__v\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "confirm-delivery-by-receiver",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4OGQ1MjNmMTNhNTFjMTJmZTJmZTI1IiwiciI6InJlY2VpdmVyIiwiaWF0IjoxNzU0MDY5ODkxLCJleHAiOjE3NTQ2NzQ2OTF9.k2KEriFJhrs5SpSBz-uflct64iW9gsFVdcygzxmeddE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688dbcf93c7d3a9026d7fce0/confirm",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"688dbcf93c7d3a9026d7fce0",
+						"confirm"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "confirm-delivery-by-receiver",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/6888d5e2f13a51c12fe2fe32/confirm",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"6888d5e2f13a51c12fe2fe32",
+								"confirm"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "847"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 08:36:49 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"34f-bMxr5pv8LNC5V0p25HkTrErAdZI\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::cn9m6-1754123807407-d488dac97183"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"couponCode\": null,\n        \"_id\": \"6888d5e2f13a51c12fe2fe32\",\n        \"trackingId\": \"TRK-20250729-POLSJ2\",\n        \"type\": \"Clothing\",\n        \"weight\": 1.2,\n        \"sender\": \"68889fad9056afa1e5d5db71\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"19 Fashion Blvd\",\n        \"deliveryAddress\": \"88 Market Lane\",\n        \"fee\": 50,\n        \"deliveryDate\": \"2025-08-12T00:00:00.000Z\",\n        \"status\": \"Delivered\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-07-29T14:08:34.694Z\",\n                \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                \"note\": \"Parcel requested\"\n            },\n            {\n                \"status\": \"In Transit\",\n                \"timestamp\": \"2025-08-02T08:36:06.832Z\",\n                \"updatedBy\": \"688b7a676b5d770ab67859bf\"\n            },\n            {\n                \"status\": \"Delivered\",\n                \"timestamp\": \"2025-08-02T08:36:49.265Z\",\n                \"updatedBy\": \"6888d523f13a51c12fe2fe25\",\n                \"note\": \"Receiver confirmed delivery\"\n            }\n        ],\n        \"createdAt\": \"2025-07-29T14:08:34.702Z\",\n        \"updatedAt\": \"2025-08-02T08:36:49.270Z\",\n        \"__v\": 2\n    }\n}"
+				},
+				{
+					"name": "confirm-delivery-by-receiver",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/688dbcf93c7d3a9026d7fce0/confirm",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"688dbcf93c7d3a9026d7fce0",
+								"confirm"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "853"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 14:50:44 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"355-48D7XdhadQ8sQZFUQUfX7631XSQ\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::s2kcc-1754146243614-55d445265572"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"688dbcf93c7d3a9026d7fce0\",\n        \"trackingId\": \"TRK-20250802-7FLV4O\",\n        \"type\": \"Mobile Phone\",\n        \"weight\": 0.5,\n        \"sender\": \"688cedf8484cda03a4808e52\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"Elephant Road\",\n        \"deliveryAddress\": \"Dhanmondi 15/A\",\n        \"fee\": 40,\n        \"couponCode\": \"SAVE50\",\n        \"deliveryDate\": \"2025-08-08T00:00:00.000Z\",\n        \"status\": \"Delivered\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-08-02T07:23:37.574Z\",\n                \"updatedBy\": \"688cedf8484cda03a4808e52\",\n                \"note\": \"Parcel requested\"\n            },\n            {\n                \"status\": \"In Transit\",\n                \"timestamp\": \"2025-08-02T14:49:55.278Z\",\n                \"updatedBy\": \"688b7a676b5d770ab67859bf\"\n            },\n            {\n                \"status\": \"Delivered\",\n                \"timestamp\": \"2025-08-02T14:50:44.074Z\",\n                \"updatedBy\": \"6888d523f13a51c12fe2fe25\",\n                \"note\": \"Receiver confirmed delivery\"\n            }\n        ],\n        \"createdAt\": \"2025-08-02T07:23:37.576Z\",\n        \"updatedAt\": \"2025-08-02T14:50:44.076Z\",\n        \"__v\": 2\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Parcel-by-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4OGQ1MjNmMTNhNTFjMTJmZTJmZTI1IiwiciI6InJlY2VpdmVyIiwiaWF0IjoxNzU0MDY5ODkxLCJleHAiOjE3NTQ2NzQ2OTF9.k2KEriFJhrs5SpSBz-uflct64iW9gsFVdcygzxmeddE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/6888d5e2f13a51c12fe2fe32",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"6888d5e2f13a51c12fe2fe32"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Parcel-by-id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/6888d5e2f13a51c12fe2fe32",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"6888d5e2f13a51c12fe2fe32"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "847"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 08:55:24 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"34f-bMxr5pv8LNC5V0p25HkTrErAdZI\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "BYPASS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::7c4vp-1754124922289-73f1805fab97"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"couponCode\": null,\n        \"_id\": \"6888d5e2f13a51c12fe2fe32\",\n        \"trackingId\": \"TRK-20250729-POLSJ2\",\n        \"type\": \"Clothing\",\n        \"weight\": 1.2,\n        \"sender\": \"68889fad9056afa1e5d5db71\",\n        \"receiver\": \"6888d523f13a51c12fe2fe25\",\n        \"pickupAddress\": \"19 Fashion Blvd\",\n        \"deliveryAddress\": \"88 Market Lane\",\n        \"fee\": 50,\n        \"deliveryDate\": \"2025-08-12T00:00:00.000Z\",\n        \"status\": \"Delivered\",\n        \"isBlocked\": false,\n        \"trackingEvents\": [\n            {\n                \"status\": \"Requested\",\n                \"timestamp\": \"2025-07-29T14:08:34.694Z\",\n                \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n                \"note\": \"Parcel requested\"\n            },\n            {\n                \"status\": \"In Transit\",\n                \"timestamp\": \"2025-08-02T08:36:06.832Z\",\n                \"updatedBy\": \"688b7a676b5d770ab67859bf\"\n            },\n            {\n                \"status\": \"Delivered\",\n                \"timestamp\": \"2025-08-02T08:36:49.265Z\",\n                \"updatedBy\": \"6888d523f13a51c12fe2fe25\",\n                \"note\": \"Receiver confirmed delivery\"\n            }\n        ],\n        \"createdAt\": \"2025-07-29T14:08:34.702Z\",\n        \"updatedAt\": \"2025-08-02T08:36:49.270Z\",\n        \"__v\": 2\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "status-log-by-Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4OGQ1MjNmMTNhNTFjMTJmZTJmZTI1IiwiciI6InJlY2VpdmVyIiwiaWF0IjoxNzU0MDY5ODkxLCJleHAiOjE3NTQ2NzQ2OTF9.k2KEriFJhrs5SpSBz-uflct64iW9gsFVdcygzxmeddE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/parcels/6888d5e2f13a51c12fe2fe32/status-log",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"parcels",
+						"6888d5e2f13a51c12fe2fe32",
+						"status-log"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "status-log-by-Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/parcels/6888d5e2f13a51c12fe2fe32/status-log",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"parcels",
+								"6888d5e2f13a51c12fe2fe32",
+								"status-log"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "392"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 08:57:18 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"188-KDoS8i0t9Lj4CFRo/SCoSF+Gb24\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "BYPASS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::cn9m6-1754125038034-b4c0514dc4b5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"status\": \"Requested\",\n            \"timestamp\": \"2025-07-29T14:08:34.694Z\",\n            \"updatedBy\": \"68889fad9056afa1e5d5db71\",\n            \"note\": \"Parcel requested\"\n        },\n        {\n            \"status\": \"In Transit\",\n            \"timestamp\": \"2025-08-02T08:36:06.832Z\",\n            \"updatedBy\": \"688b7a676b5d770ab67859bf\"\n        },\n        {\n            \"status\": \"Delivered\",\n            \"timestamp\": \"2025-08-02T08:36:49.265Z\",\n            \"updatedBy\": \"6888d523f13a51c12fe2fe25\",\n            \"note\": \"Receiver confirmed delivery\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "show-all-user-admin-only",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4YjdhNjc2YjVkNzcwYWI2Nzg1OWJmIiwiciI6ImFkbWluIiwiaWF0IjoxNzU0MDY2ODc3LCJleHAiOjE3NTQ2NzE2Nzd9.-fIbqa6qRL4ZxNq5on5xmXTgyEoWjAnj76XWoFI_2J8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/users",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "show-all-user-admin-only",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/users",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 09:00:54 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"693-Btp3ZpDbSvjVD5o9WUuSKMRZmoI\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "BYPASS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::8rq5f-1754125254189-1fd24ea0b4e6"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"68889fad9056afa1e5d5db71\",\n            \"name\": \"Nisha Test\",\n            \"email\": \"nisha@example.com\",\n            \"password\": \"$2b$10$in3WUZNalnXAR.bzrU1mouluZRa77w144CIA7zXlcz6ccVGqghgh.\",\n            \"role\": \"sender\",\n            \"isBlocked\": false,\n            \"createdAt\": \"2025-07-29T10:17:17.126Z\",\n            \"updatedAt\": \"2025-07-29T10:17:17.126Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6888a2d79056afa1e5d5db75\",\n            \"name\": \"Nisha Test\",\n            \"email\": \"nisha@example2.com\",\n            \"password\": \"$2b$10$TCHm/l0/npqSah4hWW3Yr.2Jgt.Hg8ftYeuCANNWEJ0ZETt19KLc2\",\n            \"role\": \"admin\",\n            \"isBlocked\": false,\n            \"createdAt\": \"2025-07-29T10:30:47.518Z\",\n            \"updatedAt\": \"2025-07-29T10:30:47.518Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6888a9736c1917fe7c890960\",\n            \"name\": \"Nisha Test3\",\n            \"email\": \"nisha@example3.com\",\n            \"password\": \"$2b$10$Yo8lcqPisHE1DnMx6saLVeNM.0bBGUJrI2lQsvYNd90aaBUfyJMV2\",\n            \"role\": \"sender\",\n            \"isBlocked\": false,\n            \"createdAt\": \"2025-07-29T10:58:59.313Z\",\n            \"updatedAt\": \"2025-07-29T10:58:59.313Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6888d523f13a51c12fe2fe25\",\n            \"name\": \"Receiver\",\n            \"email\": \"receiver@example.com\",\n            \"password\": \"$2b$10$KdN9q.9YaUMRHD0vAfry4.JzS8haydUzw0.UMfL8mTv/NnH2/xzRS\",\n            \"role\": \"receiver\",\n            \"isBlocked\": false,\n            \"createdAt\": \"2025-07-29T14:05:23.797Z\",\n            \"updatedAt\": \"2025-07-29T14:05:23.797Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"688b7a676b5d770ab67859bf\",\n            \"name\": \"Admin\",\n            \"email\": \"admin@example.com\",\n            \"password\": \"$2b$10$D5mxptmswTTC6oWOKdXtzu/uFP/6hYG0804vHMc.2Y88N4sw6D3..\",\n            \"role\": \"admin\",\n            \"isBlocked\": false,\n            \"createdAt\": \"2025-07-31T14:15:03.205Z\",\n            \"updatedAt\": \"2025-07-31T14:15:03.205Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"688cedf8484cda03a4808e52\",\n            \"name\": \"Sender\",\n            \"email\": \"sender@example.com\",\n            \"password\": \"$2b$10$kvAMJHfKL0Qd9wzSlc1kEeWTVUer9EjyQ3MNg4SQt7DeW/sd8TIpy\",\n            \"role\": \"sender\",\n            \"isBlocked\": false,\n            \"createdAt\": \"2025-08-01T16:40:24.976Z\",\n            \"updatedAt\": \"2025-08-01T16:40:24.976Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "user-block-admin-only",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4YjdhNjc2YjVkNzcwYWI2Nzg1OWJmIiwiciI6ImFkbWluIiwiaWF0IjoxNzU0MDY2ODc3LCJleHAiOjE3NTQ2NzE2Nzd9.-fIbqa6qRL4ZxNq5on5xmXTgyEoWjAnj76XWoFI_2J8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/users/688e0e2a0a8d3f40dfdbf737/block",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"users",
+						"688e0e2a0a8d3f40dfdbf737",
+						"block"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user-block-admin-only",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/users/688e0e2a0a8d3f40dfdbf737/block",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"users",
+								"688e0e2a0a8d3f40dfdbf737",
+								"block"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "294"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 14:36:57 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"126-AjLo6MKedCacRruXHeZS8hKDgXc\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::4x4j2-1754145416079-5c721d4c352a"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"688e0e2a0a8d3f40dfdbf737\",\n        \"name\": \"User\",\n        \"email\": \"user@example.com\",\n        \"password\": \"$2b$10$IQrXX66i/iG2fR4DerlpDu.CQTupi/bqeh9r1pQQWcHoJIcsFOmLu\",\n        \"role\": \"receiver\",\n        \"isBlocked\": true,\n        \"createdAt\": \"2025-08-02T13:10:02.795Z\",\n        \"updatedAt\": \"2025-08-02T14:36:57.729Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "user-unblock-admin-only",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpIjoiNjg4YjdhNjc2YjVkNzcwYWI2Nzg1OWJmIiwiciI6ImFkbWluIiwiaWF0IjoxNzU0MDY2ODc3LCJleHAiOjE3NTQ2NzE2Nzd9.-fIbqa6qRL4ZxNq5on5xmXTgyEoWjAnj76XWoFI_2J8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://parcel-delivery-api.vercel.app/api/users/688e0e2a0a8d3f40dfdbf737/unblock",
+					"protocol": "https",
+					"host": [
+						"parcel-delivery-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"users",
+						"688e0e2a0a8d3f40dfdbf737",
+						"unblock"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user-unblock-admin-only",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://parcel-delivery-api.vercel.app/api/users/688e0e2a0a8d3f40dfdbf737/unblock",
+							"protocol": "https",
+							"host": [
+								"parcel-delivery-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"users",
+								"688e0e2a0a8d3f40dfdbf737",
+								"unblock"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "295"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Aug 2025 14:43:26 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"127-wXQNrY+Sd68N7SecFB3u+Ynqapw\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::dnfnv-1754145801479-228c717b708e"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"688e0e2a0a8d3f40dfdbf737\",\n        \"name\": \"User\",\n        \"email\": \"user@example.com\",\n        \"password\": \"$2b$10$IQrXX66i/iG2fR4DerlpDu.CQTupi/bqeh9r1pQQWcHoJIcsFOmLu\",\n        \"role\": \"receiver\",\n        \"isBlocked\": false,\n        \"createdAt\": \"2025-08-02T13:10:02.795Z\",\n        \"updatedAt\": \"2025-08-02T14:43:26.237Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "bashttps://parcel-delivery-api.vercel.appeURL",
+			"value": "https://parcel-delivery-api.vercel.app",
+			"type": "default"
+		}
+	]
+}
