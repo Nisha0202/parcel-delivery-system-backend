@@ -119,10 +119,11 @@ src/
 
 - Only sender can cancel parcel (before `Dispatched`).
 - Only receiver can confirm delivery (when status is `In Transit`).
-- Only receiver can view their received parcels.
+- Only receiver can view the parcels sent to them.
 - Blocked users/parcels cannot access features.
-- Admin can block/unblock users/parcels, update statuses.
-- Only sender can view their parcels.
+- Admin can view all users/parcels and can use filters. 
+- Admin can block/unblock users and can block parcels, update statuses.
+- Only sender can view their sent parcels.
 - Unique tracking ID for tracking each parcel.
 - Fee calculation according 80tk/weight.
 - Fee discounted by 50tk if "Save50" coupon code used.
