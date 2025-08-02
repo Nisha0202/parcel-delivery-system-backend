@@ -141,7 +141,7 @@ src/
 
 ## 📄 API Documentation
 
-- All endpoints documented in `./parcel-delivery-api.postman_collection.json`
+- All endpoints documented in [parcel-delivery-api.postman_collection.json](./parcel-delivery-api.postman_collection.json)
 - Each endpoint returns:
     - Success: `{ success: true, data: ... }`
     - Error: `{ success: false, message: ... }`
