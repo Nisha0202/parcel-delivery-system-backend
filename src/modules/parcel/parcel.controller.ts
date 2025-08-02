@@ -87,7 +87,7 @@ export const cancelParcel = async (req: any, res: Response) => {
   res.json({ success: true, data: parcel });
 };
 
-// Receiver: View Incoming Parcels
+// Receiver: View Received Parcels
 export const incomingParcels = async (req: any, res: Response) => {
   const parcels = await Parcel.find({ receiver: req.user._id });
   res.json({ success: true, data: parcels });
@@ -98,9 +98,17 @@ export const confirmDelivery = async (req: any, res: Response) => {
   const parcel = await Parcel.findOne({ _id: req.params.id, receiver: req.user._id });
   if (!parcel) 
     return res.status(404).json({ success: false, message: 'Parcel not found' });
+
+
+   if (parcel.status === 'Delivered') {
+      return res.status(409).json({ success: false, message: 'Parcel has already been delivered.' });
+    }
+
   if (parcel.status !== 'In Transit') {
     return res.status(422).json({ success: false, message: 'Parcel not ready for delivery confirmation' });
   }
+
+  
   parcel.status = 'Delivered';
   parcel.trackingEvents.push({
     status: 'Delivered',

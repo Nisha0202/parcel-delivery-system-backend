@@ -81,7 +81,7 @@ src/
 #### Shared
 - `GET /api/parcels/:id` – View parcel details (sender, receiver, admin)
 - `GET /api/parcels/:id/status-log` – Parcel status history
-- `GET /api/track/YOUR_TRACKING_ID` - Tracking parcel with unique tracing id
+- `GET /api/track/:tracking_id` - Tracking parcel with unique tracing id
 
 ---
 
